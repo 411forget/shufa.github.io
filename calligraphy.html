@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>书法小白</title>
+	<!-- 引入样式 -->
+	<link rel="stylesheet" href="css/ft-carousel.css" />
+	<link href="https://fonts.gdgdocs.org/css?family=Lobster" rel="stylesheet" type="text/css">
+	<style type="text/css">
+		/*logo*/
+		 .menuTitle {font-size: 25px;font-family: Lobster, Monospace;font-style:italic;margin-left: 100px;margin-top: 20px;display:inline;}
+		 /*margin-right: 1000px;margin-top: 10px;*/
+		 /*float:right 右浮动*/
+		 .audioMusic {width: 250px;float:right;margin: 0;display:inline;}
+		 /*搜索框*/
+		 /*.search { float:left; width:200px; height:24px; background:url(image/search.jpg) no-repeat; margin-top:5px; margin-left:10px;padding-left:7px;}
+.search .keyword { float:left; border:0px; background:none; width:158px; height:24px; line-height:24px; color:#999;}
+.search .search-btn { float:left; background:none; border:0px; width:32px; height:24px; line-height:24px;cursor:pointer}*/
+		 /*.search { float:right; width:200px; height:24px; background:url(image/search.jpg) no-repeat; margin-top:40px; margin-right:10px;padding-right:7px;}
+		.search .keyword { float:right; border:0px; background:none; width:158px; height:24px; line-height:24px; color:#999;}
+		.search .search-btn { float:right; background:none; border:0px; width:32px; height:24px; line-height:24px;cursor:pointer}*/
+		/*导航条*/  
+            nav {
+                width: 1150px;height: 50px;background-image:url(image/menu15.jpg);background-repeat:repeat-x; margin: 0 auto;position: relative;top: 0px;z-index:9999;
+            }
+            
+            .banner {
+                float: left;
+                text-align: center;
+                height: 50px;
+                width: 20%;
+                line-height: 40px;
+            }
+            
+            .banner:hover {
+                background-color: Silver;
+                cursor: pointer;
+            }
+
+            nav div ul {
+                list-style: none;
+                /*display: none;*/
+                background-color: LightSlateGray;
+                overflow: hidden;
+                /*模拟height:auto时候的情况*/                
+                max-height: 0px;
+                transition: max-height 0.3s;
+                /*多浏览器支持*/
+                -moz-transition: height 1s;
+                -webkit-transition: height 1s;
+                -o-transition: height 1s;
+            }
+            
+            .banner:hover ul {
+                /*display: block;*/
+                width: 100%;
+                max-height: 160px;
+            }
+            
+            nav div ul li {
+                overflow: hidden;
+            }
+
+            nav div ul li a:hover{background-image:url(image/menu15.jpg); background-position: center-100px; background-color: Silver;}
+            nav div ul li a{text-decoration: none;color:#000000;line-height: 50px; width: 100%;display:block;text-align: center;background-image:url(image/menu15.jpg);background-position: right -100px;}
+		 /*轮翻滚动*/
+		 .example{width: 600px;height: 620px;font-size: 40px;text-align: center;margin: 20px auto;background-color: #464576;}
+		 .carousel-item{line-height: 620px;color: #fff;font-family:  Arial Black}
+		body{margin: 0;font-family: "微软雅黑";background-color: gray }
+		.search1{float:right;margin: 63px auto;position: relative}
+		/*.search_button{float:right;margin-top: 40px}*/
+	</style>
+</head>
+<body>
+	<h1 class="menuTitle"><img src="image/logo4.jpg" width="80px" height="75px">泼墨造物，笔下生花</h1>
+		<!-- <input type="text" class="input_search"><input type="button" value="搜索" class="search_button"></div> -->
+	 	<!-- autoplay="autoplay"  audio自动播放 -->
+	<audio class="audioMusic" controls="controls">	您的浏览器不支持html5的audio标签
+		<source src="audio/双笙 - 长安忆.mp3" type="audio/mpeg">
+	</audio>
+ 	
+	<!-- #导航条 -->
+	<!-- http://www.wzxx.org/zitie/ -->
+	<nav>
+        <div id="nav-button-1" class="banner">网站首页</div>
+        <div id="nav-button-2" class="banner">书法风格
+            <ul>
+                <li><a href="#">正楷</a></li>
+                <li><a href="#">行书</a></li>
+				<li><a href="#">草书</a></li>
+            </ul>
+        </div>
+        <div id="nav-button-3" class="banner">书法详解
+            <ul>
+                <li><a href="basic3_1.html" src="basic3_1.html">基本技法</a></li>
+            </ul>
+        </div>
+        <div id="nav-button-4" class="banner">小白交流区</div>       
+	</nav>
+	<!-- 轮翻滚动 -->
+	<div class="example">
+		<div class="ft-carousel" id="carousel_1">
+			<ul class="carousel-inner">
+				<li class="carousel-item"><a href=# title="欧阳询《九成宫临习字帖》"><img width="600px" height="620px" src="image/欧阳询《九成宫临习字帖》.jpg"/></a></li>
+				<li class="carousel-item"><a href=# title="赵孟頫-洛神赋"><img  width="600px" height="620px" src="image/赵孟頫-洛神赋.jpg"/></a></li>
+				<li class="carousel-item"><a href=# title="趙孟頫行书《论裴行俭书法》"><img  width="600px" height="620px" src="image/趙孟頫行书《论裴行俭书法》.jpg"/></a></li>
+				<li class="carousel-item"><a href=# title="《毛主席诗词三十九首草书帖》"><img  width="600px" height="620px" src="image/《毛主席诗词三十九首草书帖》.jpg"/></a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- 引入脚本 处理图片滚动 -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/ft-carousel.min.js"></script>
+	<!-- 初始化插件 -->
+	<script type="text/javascript">
+		$("#carousel_1").FtCarousel();
+	</script>
+	<!-- <div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';color:#ffffff"> -->
+</body>	
+</html>
