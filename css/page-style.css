@@ -1,0 +1,78 @@
+/*logo*/
+.menuTitle {font-size: 40px;font-family: Lobster, Monospace;font-style:italic;margin-left: 100px;margin-top: 20px;display:inline;}
+/*margin-right: 1000px;margin-top: 10px;*/
+/*float:right 右浮动*/
+.audioMusic {width: 250px;float:right;margin: 0;display:inline;}
+.banner {
+    float: left;
+    text-align: center;
+    height: 50px;
+    width: 20%;
+    line-height: 40px;
+    font-size: 18px;
+}   
+.banner:hover {
+    background-color: Silver;
+    cursor: pointer;
+}
+nav div ul {
+    list-style: none;
+    /*display: none;*/
+    background-color: LightSlateGray;
+    overflow: hidden;
+    /*模拟height:auto时候的情况*/                
+    max-height: 0px;
+    transition: max-height 0.3s;
+    /*多浏览器支持*/
+    -moz-transition: height 1s;
+    -webkit-transition: height 1s;
+    -o-transition: height 1s;
+}  
+.banner:hover ul {
+    /*display: block;*/
+    width: 100%;
+    max-height: 160px;
+} 
+nav div ul li {
+    overflow: hidden;
+}
+
+
+body{margin: 0;font-family: "微软雅黑";background-color: gray }
+
+/*index.html*/
+/*轮翻滚动*/
+.example{width: 600px;height: 620px;font-size: 40px;text-align: center;margin: 20px auto;background-color: #464576;}
+.carousel-item{line-height: 620px;color: #fff;font-family:  Arial Black}
+
+.search1{float:right;margin: 63px auto;position: relative}
+/*.search_button{float:right;margin-top: 40px}*/
+.all_content{margin-left: 10%;width: 80%;}
+.foot{margin-left: 40%;width: 50%;height: -10%;margin-bottom: 2%;}
+
+/*basic2_1.html*/
+/*<!-- 基本技法样式 -->*/
+.content1{background-color: Silver;width: 60%;height: 30px;font-size: 17px;}
+a{text-decoration: none;font-family: Lobster;color: black;font-weight: 900}
+.tips{height: 30px}
+.all_content{margin-left: 10%;width: 80%;}/*background: #ffffff;*/
+.foot{margin-left: 40%;width: 50%;margin-top:400px; }
+/*// 主页文章添加阴影效果*/
+.a_list{
+    width: 60%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 25px;
+    -webkit-box-shadow: 0 0 5px #000;/*rgba(202, 203, 203, .5)*/
+    -moz-box-shadow: 0 0 5px #000;/*rgba(202, 203, 204, .5)*/
+}
+.image_list{
+    width: 80px;
+    height: 80px;
+    display:inline;
+
+}
+.note{
+    display:inline;
+
+}
