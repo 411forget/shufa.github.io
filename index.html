@@ -4,14 +4,12 @@
 	<meta charset="UTF-8">
 	<title>书法小白</title>
 	<!-- 引入样式 -->
+	<link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/ft-carousel.css" />
+	<!-- 页面样式 -->
+    <link rel="stylesheet" href="css/page-style.css" />
 	<link href="https://fonts.gdgdocs.org/css?family=Lobster" rel="stylesheet" type="text/css">
 	<style type="text/css">
-	/*logo*/
-	.menuTitle {font-size: 25px;font-family: Lobster, Monospace;font-style:italic;margin-top: 20px;display:inline;}
-	/*margin-right: 1000px;margin-top: 10px;*/
-	/*float:right 右浮动*/
-	.audioMusic {width: 250px;float:right;margin: 0;display:inline;}
 	/*搜索框*/
 		 /*.search { float:left; width:200px; height:24px; background:url(image/search.jpg) no-repeat; margin-top:5px; margin-left:10px;padding-left:7px;}
 .search .keyword { float:left; border:0px; background:none; width:158px; height:24px; line-height:24px; color:#999;}
@@ -21,56 +19,9 @@
 		.search .search-btn { float:right; background:none; border:0px; width:32px; height:24px; line-height:24px;cursor:pointer}*/
 		/*导航条*/  
 		nav {
-			width: 1150px;height: 50px;background-image:url(image/menu15.jpg);background-repeat:repeat-x; margin: 0 auto;position: relative;top: 0px;z-index:9999;
+			width: 100%;height: 50px;background-image:url(image/menu15.jpg);background-repeat:repeat-x; margin: 0 auto;position: relative;top: 0px;z-index:9999;
 		}
-
-		.banner {
-			float: left;
-			text-align: center;
-			height: 50px;
-			width: 20%;
-			line-height: 40px;
-		}
-
-		.banner:hover {
-			background-color: Silver;
-			cursor: pointer;
-		}
-
-		nav div ul {
-			list-style: none;
-			/*display: none;*/
-			background-color: LightSlateGray;
-			overflow: hidden;
-			/*模拟height:auto时候的情况*/                
-			max-height: 0px;
-			transition: max-height 0.3s;
-			/*多浏览器支持*/
-			-moz-transition: height 1s;
-			-webkit-transition: height 1s;
-			-o-transition: height 1s;
-		}
-
-		.banner:hover ul {
-			/*display: block;*/
-			width: 100%;
-			max-height: 160px;
-		}
-
-		nav div ul li {
-			overflow: hidden;
-		}
-
-		nav div ul li a:hover{background-image:url(image/menu15.jpg); background-position: center-100px; background-color: Silver;}
 		nav div ul li a{text-decoration: none;color:#000000;line-height: 50px; width: 100%;display:block;text-align: center;background-image:url(image/menu15.jpg);background-position: right -100px;}
-		/*轮翻滚动*/
-		.example{width: 600px;height: 620px;font-size: 40px;text-align: center;margin: 20px auto;background-color: #464576;}
-		.carousel-item{line-height: 620px;color: #fff;font-family:  Arial Black}
-		body{margin: 0;font-family: "微软雅黑";background-color: gray }
-		.search1{float:right;margin: 63px auto;position: relative}
-		/*.search_button{float:right;margin-top: 40px}*/
-		.all_content{margin-left: 10%;width: 80%;}
-		.foot{margin-left: 40%;width: 50%;height: -10%;margin-bottom: 2%;}
 	</style>
 </head>
 <body>
@@ -78,28 +29,28 @@
 
 		<h1 clsass="menuTitle"><img src="image/logo4.jpg" width="90px" height="85px"/>&nbsp&nbsp泼墨造物，笔下生花
 			<!-- autoplay="autoplay"  audio自动播放 -->
-			<audio class="audioMusic" controls="controls"> 您的浏览器不支持html5的audio标签
+			<!-- <audio class="audioMusic" controls="controls"> 您的浏览器不支持html5的audio标签
 				<source src="audio/双笙 - 长安忆.mp3" type="audio/mpeg"/>
-			</audio>    
+			</audio>  -->   
 		</h1>
 		<!-- #导航条 -->
 		<!-- http://www.wzxx.org/zitie/ -->
 		<nav>
-			<div id="nav-button-1" class="banner">网站首页</div>
-			<div id="nav-button-2" class="banner">书法风格
-				<ul>
-					<li><a href="#">正楷</a></li>
-					<li><a href="#">行书</a></li>
-					<li><a href="#">草书</a></li>
-				</ul>
-			</div>
-			<div id="nav-button-3" class="banner">书法详解
-				<ul>
-					<li><a href="basic3_1.html" src="basic3_1.html">基本技法</a></li>
-				</ul>
-			</div>
-			<div id="nav-button-4" class="banner">小白交流区</div>       
-		</nav>
+            <div id="nav-button-1" class="banner" src="calligraphy.html"><a href="index.html" src="index.html">网站首页</a></div>
+            <div id="nav-button-2" class="banner"><a href="index.html" src="index.html">书法字帖</a>
+                <ul>
+                    <li><a href="basic2_1.html">楷书</a></li>
+                    <li><a href="basic2_1.html">行书</a></li>
+                    <li><a href="basic2_1.html">草书</a></li>
+                </ul>
+            </div>
+            <div id="nav-button-3" class="banner"><a href="index.html" src="index.html">书法详解</a>
+                <ul>
+                    <li><a href="basic3_1.html" src="basic3_1.html">基本技法</a></li>
+                </ul>
+            </div>
+            <div id="nav-button-4" class="banner"><a href="calligraphy.html" src="calligraphy.html">小白交流区</a></div>       
+        </nav>
 		<!-- 轮翻滚动 -->
 		<div class="example">
 			<div class="ft-carousel" id="carousel_1">
