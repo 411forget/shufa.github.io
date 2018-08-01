@@ -27,13 +27,15 @@ nav div ul {
     -moz-transition: height 1s;
     -webkit-transition: height 1s;
     -o-transition: height 1s;
-}  
+} 
+/*hover鼠标悬浮 */
 .banner:hover ul {
     /*display: block;*/
     width: 100%;
     max-height: 160px;
 } 
 nav div ul li {
+    /*overflow 属性可以确定是否显示滚动条等行为。*/
     overflow: hidden;
 }
 
@@ -42,21 +44,26 @@ body{margin: 0;font-family: "微软雅黑";background-color: gray }
 
 /*index.html*/
 /*轮翻滚动*/
-.example{width: 600px;height: 620px;font-size: 40px;text-align: center;margin: 20px auto;background-color: #464576;}
-.carousel-item{line-height: 620px;color: #fff;font-family:  Arial Black}
-
+.fist_row{width: 100%;height: 520px;margin-top: 60px;display:inline;}
+.example{float:left;margin-top: 10px;width: 50%;height: 520px;font-size: 40px;background-color: gray;}
+.carousel-item{line-height: 520px;color: #fff;font-family:  Arial Black}
+.content2{float:right;margin-top: 10px;width: 48%;display:inline;}
 .search1{float:right;margin: 63px auto;position: relative}
+.hot-list{background-color: Silver;height: 40px;font-size: 18px;line-height: 40px;}
+.hot-news{margin-top: 10px;}
+.hot-news-list{margin-top: 5px;margin-top: 8px;}
 /*.search_button{float:right;margin-top: 40px}*/
-.all_content{margin-left: 10%;width: 80%;}
 .foot{margin-left: 40%;width: 50%;height: -10%;margin-bottom: 2%;}
-
+/*最新内容*/
+.new_content{width: 50%;height: 520px;display:inline;}
+.content3{margin-top: 540px;}
 /*basic2_1.html*/
 /*<!-- 基本技法样式 -->*/
 .content1{background-color: Silver;width: 100%;height: 30px;font-size: 17px;}
 a{text-decoration: none;font-family: Lobster;color: black;font-weight: 900}
 .tips{height: 30px}
 .all_content{margin-left: 10%;width: 80%;}/*background: #ffffff;*/
-.foot{margin-left: 40%;width: 50%;margin-top:400px; }
+.foot{margin-left: 40%;width: 50%; margin-top:1000px;}/*margin-top:400px;*/
 .image_jifa{width: 80%;}
 /*// 主页文章添加阴影效果*/
 .a_list{
