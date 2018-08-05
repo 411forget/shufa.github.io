@@ -1,6 +1,8 @@
-logo*/
-.menuTitle {font-size: 40px;font-family: Lobster, Monospace;font-style:italic;margin-left: 100px;margin-top: 20px;display:inline;}
-/*margin-right: 1000px;margin-top: 10px;*/
+/*logo*/*/
+.content_first{width: 100%;display:inline;}
+.menuTitle {width: 100%;font-size: 40px;font-family: Lobster, Monospace;font-style:italic;}
+/*margin-right: 1000px;margin-top: 10px;margin-left: 90%;*/
+.login_text{width: 5%;margin-top: 5px;font-size: 16px;float:right;list-style: none;}
 /*float:right 右浮动*/
 .audioMusic {width: 250px;float:right;margin: 0;display:inline;}
 .banner {
@@ -89,6 +91,7 @@ a{text-decoration: none;font-family: Lobster;color: black;font-weight: 900}
     display:inline;
 
 }
+/*login*/
 
            /* ul{display: block;}  
             ul li{transition: transform 0.25s ease;float: left;width: 200px;height: 200px;line-height: 200px; text-align: center;margin: 10px; background-color: #00b5e1;list-style: none;}      
