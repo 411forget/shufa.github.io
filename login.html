@@ -9,7 +9,7 @@
 	<!-- 页面样式 -->
 	<link rel="stylesheet" href="css/page-style.css" />
 	<link href="https://fonts.gdgdocs.org/css?family=Lobster" rel="stylesheet" type="text/css">
-	<script src="js/login_type.js"></script>
+	
 	<link rel="stylesheet" href="css/login_style.css" />
 </head>
 <body>
@@ -23,7 +23,7 @@
 	<div id="login_dialog">
 		<div class="register_dialog_title">
 			<p class="register_dialog_info">登录</p>
-			<p class="dialog_close">X</p>
+			<!-- <p class="dialog_close">X</p> -->
 			<div class="clear"></div>
 		</div>
 		<div style="background-color:#ffffff;margin:10px;">
@@ -45,10 +45,8 @@
 			</form>
 		</div>
 	</div>
-
-</body>
-
-<script type="text/javascript">	
+	<script src="js/login_type.js"></script>
+	<script type="text/javascript">	
 	//文本框默认提示文字
 	function textFocus(el) {
 		if (el.defaultValue == el.value) { el.value = ''; el.style.color = '#333'; }
@@ -261,6 +259,7 @@ function emptyLogin(){
 }
 
 </script>
+</body>
 
 
 
